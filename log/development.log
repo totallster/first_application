@@ -18,3 +18,251 @@ Started GET "/rails/info/properties" for 127.0.0.1 at Thu May 19 17:15:52 +0300 
 [0m
 Rendered inline template (0.0ms)
 Completed 200 OK in 136ms (Views: 15.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon May 23 15:08:25 +0300 2011
+
+ActionController::RoutingError (No route matches "/users"):
+  
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon May 23 15:08:32 +0300 2011
+
+ActionController::RoutingError (No route matches "/users"):
+  
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (155.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35mSQL (1.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36mSQL (8.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreateUsers (20110523120922)
+  [1m[36mSQL (1.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110523120922')
+Migrating to CreateMicroposts (20110523120958)
+  [1m[36mSQL (1.0ms)[0m  [1mCREATE TABLE "microposts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110523120958')
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("microposts")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+
+
+Started GET "/users" for 127.0.0.1 at Mon May 23 15:11:22 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 193ms (Views: 24.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/microposts" for 127.0.0.1 at Mon May 23 15:12:44 +0300 2011
+  Processing by MicropostsController#index as HTML
+  [1m[35mMicropost Load (1.0ms)[0m  SELECT "microposts".* FROM "microposts"
+Rendered microposts/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 26ms (Views: 19.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/microposts/new" for 127.0.0.1 at Mon May 23 15:12:47 +0300 2011
+  Processing by MicropostsController#new as HTML
+Rendered microposts/_form.html.erb (87.0ms)
+Rendered microposts/new.html.erb within layouts/application (99.0ms)
+Completed 200 OK in 130ms (Views: 123.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/microposts" for 127.0.0.1 at Mon May 23 15:12:52 +0300 2011
+  Processing by MicropostsController#create as HTML
+  Parameters: {"commit"=>"Create Micropost", "micropost"=>{"user_id"=>"1", "content"=>"wserasr"}, "authenticity_token"=>"JU7CEuiw71ZvlctuCyBGlCdO1e5HDbbSXQQhNd8ftog=", "utf8"=>"✓"}
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "microposts" ("content", "created_at", "updated_at", "user_id") VALUES ('wserasr', '2011-05-23 12:12:52.062443', '2011-05-23 12:12:52.062443', 1)
+Redirected to http://localhost:3000/microposts/1
+Completed 302 Found in 81ms
+
+
+Started GET "/microposts/1" for 127.0.0.1 at Mon May 23 15:12:52 +0300 2011
+  Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMicropost Load (0.0ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE ("microposts"."id" = 1) LIMIT 1[0m
+Rendered microposts/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 31ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/microposts" for 127.0.0.1 at Mon May 23 15:12:55 +0300 2011
+  Processing by MicropostsController#index as HTML
+  [1m[35mMicropost Load (0.0ms)[0m  SELECT "microposts".* FROM "microposts"
+Rendered microposts/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 31ms (Views: 25.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/microposts/new" for 127.0.0.1 at Mon May 23 15:12:56 +0300 2011
+  Processing by MicropostsController#new as HTML
+Rendered microposts/_form.html.erb (7.0ms)
+Rendered microposts/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 38ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/microposts" for 127.0.0.1 at Mon May 23 15:12:59 +0300 2011
+  Processing by MicropostsController#create as HTML
+  Parameters: {"commit"=>"Create Micropost", "micropost"=>{"user_id"=>"1", "content"=>"123124"}, "authenticity_token"=>"JU7CEuiw71ZvlctuCyBGlCdO1e5HDbbSXQQhNd8ftog=", "utf8"=>"✓"}
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "microposts" ("created_at", "updated_at", "user_id", "content") VALUES ('2011-05-23 12:12:59.886890', '2011-05-23 12:12:59.886890', 1, '123124')[0m
+Redirected to http://localhost:3000/microposts/2
+Completed 302 Found in 25ms
+
+
+Started GET "/microposts/2" for 127.0.0.1 at Mon May 23 15:12:59 +0300 2011
+  Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mMicropost Load (0.0ms)[0m  SELECT "microposts".* FROM "microposts" WHERE ("microposts"."id" = 2) LIMIT 1
+Rendered microposts/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 30ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/microposts" for 127.0.0.1 at Mon May 23 15:13:02 +0300 2011
+  Processing by MicropostsController#index as HTML
+  [1m[36mMicropost Load (0.0ms)[0m  [1mSELECT "microposts".* FROM "microposts"[0m
+Rendered microposts/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 35ms (Views: 27.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/microposts/new" for 127.0.0.1 at Mon May 23 15:13:04 +0300 2011
+  Processing by MicropostsController#new as HTML
+Rendered microposts/_form.html.erb (6.0ms)
+Rendered microposts/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 39ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/microposts" for 127.0.0.1 at Mon May 23 15:13:09 +0300 2011
+  Processing by MicropostsController#create as HTML
+  Parameters: {"commit"=>"Create Micropost", "micropost"=>{"user_id"=>"2", "content"=>"test"}, "authenticity_token"=>"JU7CEuiw71ZvlctuCyBGlCdO1e5HDbbSXQQhNd8ftog=", "utf8"=>"✓"}
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "microposts" ("created_at", "user_id", "updated_at", "content") VALUES ('2011-05-23 12:13:09.509441', 2, '2011-05-23 12:13:09.509441', 'test')
+Redirected to http://localhost:3000/microposts/3
+Completed 302 Found in 25ms
+
+
+Started GET "/microposts/3" for 127.0.0.1 at Mon May 23 15:13:09 +0300 2011
+  Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMicropost Load (0.0ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE ("microposts"."id" = 3) LIMIT 1[0m
+Rendered microposts/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 31ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/microposts" for 127.0.0.1 at Mon May 23 15:13:11 +0300 2011
+  Processing by MicropostsController#index as HTML
+  [1m[35mMicropost Load (1.0ms)[0m  SELECT "microposts".* FROM "microposts"
+Rendered microposts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 76ms (Views: 69.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon May 23 15:13:17 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 27ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Mon May 23 15:13:18 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (7.0ms)
+Rendered users/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 39ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon May 23 15:13:21 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Create User", "authenticity_token"=>"JU7CEuiw71ZvlctuCyBGlCdO1e5HDbbSXQQhNd8ftog=", "utf8"=>"✓", "user"=>{"name"=>"1", "email"=>"123@gmail.com"}}
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "users" ("updated_at", "email", "created_at", "name") VALUES ('2011-05-23 12:13:21.930151', '123@gmail.com', '2011-05-23 12:13:21.930151', '1')
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 21ms
+
+
+Started GET "/users/1" for 127.0.0.1 at Mon May 23 15:13:21 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered users/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 30ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon May 23 15:13:24 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 76ms (Views: 25.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/microposts" for 127.0.0.1 at Mon May 23 15:13:30 +0300 2011
+  Processing by MicropostsController#index as HTML
+  [1m[36mMicropost Load (0.0ms)[0m  [1mSELECT "microposts".* FROM "microposts"[0m
+Rendered microposts/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 33ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/microposts/new" for 127.0.0.1 at Mon May 23 15:13:54 +0300 2011
+  Processing by MicropostsController#new as HTML
+Rendered microposts/_form.html.erb (6.0ms)
+Rendered microposts/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 34ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/microposts" for 127.0.0.1 at Mon May 23 15:14:16 +0300 2011
+  Processing by MicropostsController#index as HTML
+  [1m[35mMicropost Load (0.0ms)[0m  SELECT "microposts".* FROM "microposts"
+Rendered microposts/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 31ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/microposts/1" for 127.0.0.1 at Mon May 23 15:14:26 +0300 2011
+  Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMicropost Load (0.0ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE ("microposts"."id" = 1) LIMIT 1[0m
+Rendered microposts/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 44ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/microposts" for 127.0.0.1 at Mon May 23 15:14:28 +0300 2011
+  Processing by MicropostsController#index as HTML
+  [1m[35mMicropost Load (0.0ms)[0m  SELECT "microposts".* FROM "microposts"
+Rendered microposts/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 30ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/microposts/new" for 127.0.0.1 at Mon May 23 15:33:31 +0300 2011
+  Processing by MicropostsController#new as HTML
+Rendered microposts/_form.html.erb (5.0ms)
+Rendered microposts/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 80ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/microposts" for 127.0.0.1 at Mon May 23 15:33:43 +0300 2011
+  Processing by MicropostsController#create as HTML
+  Parameters: {"commit"=>"Create Micropost", "micropost"=>{"user_id"=>"", "content"=>"asfrasfasasfrasfasvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvasfrasfasasfrasfasasfrasfasasfrasfasasfrasfasasfrasfasasfrasfasasfrasfasasfrasfasasfrasfasasfrasfasasfrasfasasfrasfasasfrasfas   asfrasfas"}, "authenticity_token"=>"JU7CEuiw71ZvlctuCyBGlCdO1e5HDbbSXQQhNd8ftog=", "utf8"=>"✓"}
+Rendered microposts/_form.html.erb (5.0ms)
+Rendered microposts/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 40ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36mMicropost Load (0.0ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE ("microposts".user_id = 1)[0m
