@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ec1eb3f-9e84-4e3c-b729-b1a52860b3da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/twitter.iml" afterPath="$PROJECT_DIR$/.idea/twitter.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-    </list>
+    <list default="true" id="0ec1eb3f-9e84-4e3c-b729-b1a52860b3da" name="Default" comment="" />
     <ignored path="twitter.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -722,7 +718,7 @@
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding method for logo" />
+    <option name="LAST_COMMIT_MESSAGE" value="asdasd" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -738,6 +734,7 @@
     <MESSAGE value="Delete spec views and helpers" />
     <MESSAGE value="Finished layout and routes" />
     <MESSAGE value="adding method for logo" />
+    <MESSAGE value="asdasd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
