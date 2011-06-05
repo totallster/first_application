@@ -24,6 +24,7 @@ class UsersController < ApplicationController
   # GET /users/new
   # GET /users/new.xml
   def new
+    @title = "Sign up"
     @user = User.new
 
     respond_to do |format|
@@ -80,4 +81,5 @@ class UsersController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
 end

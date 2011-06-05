@@ -1,0 +1,602 @@
+  [1m[36mSQL (17.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#index as HTML
+Rendered microposts/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 21ms (Views: 17.0ms | ActiveRecord: 17.0ms)
+  [1m[35mSQL (12.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"37"}
+Completed 200 OK in 48ms (Views: 45.0ms | ActiveRecord: 13.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#new as HTML
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 2.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#edit as HTML
+  Parameters: {"id"=>"37"}
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#create as HTML
+  Parameters: {"micropost"=>{"these"=>"params"}}
+Redirected to 
+Completed   in 235ms
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#create as HTML
+  Parameters: {"micropost"=>{}}
+Redirected to 
+Completed   in 8ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#create as HTML
+  Parameters: {"micropost"=>{"these"=>"params"}}
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#create as HTML
+  Parameters: {"micropost"=>{}}
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#update as HTML
+  Parameters: {"micropost"=>{"these"=>"params"}, "id"=>"37"}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#update as HTML
+  Parameters: {"id"=>"1"}
+Redirected to 
+Completed   in 8ms
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#update as HTML
+  Parameters: {"id"=>"1"}
+Redirected to 
+Completed   in 7ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#update as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 3.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#update as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#destroy as HTML
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/microposts
+Completed 302 Found in 1ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/microposts
+Completed 302 Found in 3ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by PagesController#home as HTML
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by PagesController#contact as HTML
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#index as HTML
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"37"}
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#new as HTML
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"37"}
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"these"=>"params"}}
+Redirected to 
+Completed   in 8ms
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{}}
+Redirected to 
+Completed   in 6ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"these"=>"params"}}
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 3.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{}}
+Completed 200 OK in 3ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"37", "user"=>{"these"=>"params"}}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"1"}
+Redirected to 
+Completed   in 7ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"1"}
+Redirected to 
+Completed   in 51ms
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 3.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#destroy as HTML
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/users
+Completed 302 Found in 0ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#destroy as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed 302 Found in 3ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+
+
+Started GET "/microposts" for 127.0.0.1 at Fri May 27 16:43:50 +0300 2011
+  Processing by MicropostsController#index as HTML
+  [1m[35mMicropost Load (28.0ms)[0m  SELECT `microposts`.* FROM `microposts`
+Mysql::Error: Table 'tw_test.microposts' doesn't exist: SELECT `microposts`.* FROM `microposts`
+Completed   in 254ms
+  [1m[36mSQL (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+
+
+Started GET "/users" for 127.0.0.1 at Fri May 27 16:43:50 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+Mysql::Error: Table 'tw_test.users' doesn't exist: SELECT `users`.* FROM `users`
+Completed   in 2ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#index as HTML
+Rendered microposts/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"37"}
+Completed 200 OK in 10ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#new as HTML
+Completed 200 OK in 10ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#edit as HTML
+  Parameters: {"id"=>"37"}
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#create as HTML
+  Parameters: {"micropost"=>{"these"=>"params"}}
+Redirected to 
+Completed   in 12ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#create as HTML
+  Parameters: {"micropost"=>{}}
+Redirected to 
+Completed   in 9ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#create as HTML
+  Parameters: {"micropost"=>{"these"=>"params"}}
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#create as HTML
+  Parameters: {"micropost"=>{}}
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#update as HTML
+  Parameters: {"micropost"=>{"these"=>"params"}, "id"=>"37"}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#update as HTML
+  Parameters: {"id"=>"1"}
+Redirected to 
+Completed   in 7ms
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#update as HTML
+  Parameters: {"id"=>"1"}
+Redirected to 
+Completed   in 6ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#update as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 3.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#update as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#destroy as HTML
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/microposts
+Completed 302 Found in 1ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/microposts
+Completed 302 Found in 2ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by PagesController#home as HTML
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by PagesController#contact as HTML
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#index as HTML
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"37"}
+Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 2.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#new as HTML
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"37"}
+Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"these"=>"params"}}
+Redirected to 
+Completed   in 9ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{}}
+Redirected to 
+Completed   in 7ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"these"=>"params"}}
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{}}
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"37", "user"=>{"these"=>"params"}}
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"1"}
+Redirected to 
+Completed   in 7ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"1"}
+Redirected to 
+Completed   in 7ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#destroy as HTML
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/users
+Completed 302 Found in 0ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#destroy as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed 302 Found in 2ms
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by PagesController#contact as HTML
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#index as HTML
+Rendered microposts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 18ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"37"}
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#new as HTML
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#edit as HTML
+  Parameters: {"id"=>"37"}
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#create as HTML
+  Parameters: {"micropost"=>{"these"=>"params"}}
+Redirected to 
+Completed   in 124ms
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#create as HTML
+  Parameters: {"micropost"=>{}}
+Redirected to 
+Completed   in 8ms
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#create as HTML
+  Parameters: {"micropost"=>{"these"=>"params"}}
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 5.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#create as HTML
+  Parameters: {"micropost"=>{}}
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#update as HTML
+  Parameters: {"micropost"=>{"these"=>"params"}, "id"=>"37"}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#update as HTML
+  Parameters: {"id"=>"1"}
+Redirected to 
+Completed   in 8ms
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#update as HTML
+  Parameters: {"id"=>"1"}
+Redirected to 
+Completed   in 7ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#update as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 2.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#update as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#destroy as HTML
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/microposts
+Completed 302 Found in 1ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by MicropostsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/microposts
+Completed 302 Found in 2ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by PagesController#home as HTML
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by PagesController#contact as HTML
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#index as HTML
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"37"}
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#new as HTML
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"37"}
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"these"=>"params"}}
+Redirected to 
+Completed   in 9ms
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{}}
+Redirected to 
+Completed   in 10ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"these"=>"params"}}
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 3.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{}}
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"37", "user"=>{"these"=>"params"}}
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"1"}
+Redirected to 
+Completed   in 7ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"1"}
+Redirected to 
+Completed   in 8ms
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#destroy as HTML
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/users
+Completed 302 Found in 1ms
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  Processing by UsersController#destroy as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed 302 Found in 3ms
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+
+
+Started GET "/microposts" for 127.0.0.1 at Mon May 30 11:32:18 +0300 2011
+  Processing by MicropostsController#index as HTML
+  [1m[35mMicropost Load (14.0ms)[0m  SELECT `microposts`.* FROM `microposts`
+Mysql::Error: Table 'tw_test.microposts' doesn't exist: SELECT `microposts`.* FROM `microposts`
+Completed   in 324ms
+  [1m[36mSQL (1.0ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+
+
+Started GET "/users" for 127.0.0.1 at Mon May 30 11:32:19 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+Mysql::Error: Table 'tw_test.users' doesn't exist: SELECT `users`.* FROM `users`
+Completed   in 3ms
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
