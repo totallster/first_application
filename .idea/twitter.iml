@@ -12,13 +12,19 @@
   <component name="GemRequirementsHolder" version="3">
     <requirement>
       <requirement>
-        <dependency name="mysql" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="factory_girl_rails" version="1.0" bound="EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="mysql2" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="gravatar_image_tag" version="1.0.0.pre2" bound="EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="mysql" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
@@ -93,6 +99,9 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] builder (v2.1.2, C:/Ruby187/lib/ruby/gems/1.8/gems/builder-2.1.2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rake (v0.9.0, C:/Ruby187/lib/ruby/gems/1.8/gems/rake-0.9.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] annotate-models (v1.0.4, C:/Ruby187/lib/ruby/gems/1.8/gems/annotate-models-1.0.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] factory_girl_rails (v1.0, C:/Ruby187/lib/ruby/gems/1.8/gems/factory_girl_rails-1.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] factory_girl (v2.0.0.beta2, C:/Ruby187/lib/ruby/gems/1.8/gems/factory_girl-2.0.0.beta2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] gravatar_image_tag (v1.0.0.pre2, C:/Ruby187/lib/ruby/gems/1.8/gems/gravatar_image_tag-1.0.0.pre2)" level="application" />
   </component>
 </module>
 

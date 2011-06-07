@@ -3317,3 +3317,1037 @@ Rendered layouts/_header.html.erb (2.0ms)
 Rendered layouts/_footer.html.erb (1.0ms)
 Rendered users/show.html.erb within layouts/application (29.0ms)
 Completed 200 OK in 64ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Sun Jun 05 22:05:54 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 64ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Sun Jun 05 22:05:58 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 65ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:06:00 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 42ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:06:01 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 39ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Sun Jun 05 22:10:37 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (76.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (100.0ms)
+Completed 200 OK in 148ms (Views: 119.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Sun Jun 05 22:10:48 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 261ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:10:51 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:10:52 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Sun Jun 05 22:10:53 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (5.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 61ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:10:53 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 39ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:10:55 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 96ms (Views: 96.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at Sun Jun 05 22:10:55 +0300 2011
+  Processing by PagesController#help as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/help.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 37ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:11:01 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at Sun Jun 05 22:11:02 +0300 2011
+  Processing by PagesController#help as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/help.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:11:04 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 37ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at Sun Jun 05 22:11:04 +0300 2011
+  Processing by PagesController#help as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/help.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at Sun Jun 05 22:11:05 +0300 2011
+  Processing by PagesController#help as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/help.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:11:06 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 38ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at Sun Jun 05 22:11:07 +0300 2011
+  Processing by PagesController#help as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/help.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at Sun Jun 05 22:11:08 +0300 2011
+  Processing by PagesController#help as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/help.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:11:08 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at Sun Jun 05 22:11:09 +0300 2011
+  Processing by PagesController#help as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/help.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:11:09 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 39ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at Sun Jun 05 22:11:10 +0300 2011
+  Processing by PagesController#help as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/help.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:11:10 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 37ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at Sun Jun 05 22:11:11 +0300 2011
+  Processing by PagesController#help as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/help.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 37ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:11:11 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at Sun Jun 05 22:11:13 +0300 2011
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/about.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at Sun Jun 05 22:11:14 +0300 2011
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/contact.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at Sun Jun 05 22:11:18 +0300 2011
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/about.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at Sun Jun 05 22:11:19 +0300 2011
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/contact.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 38ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:11:21 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 38ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:11:22 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered pages/home.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 41ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:11:22 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 38ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:11:23 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Sun Jun 05 22:11:23 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (5.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 62ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Sun Jun 05 22:11:25 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users`
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 65ms (Views: 54.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Sun Jun 05 22:11:33 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (33.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 99ms (Views: 50.0ms | ActiveRecord: 34.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Sun Jun 05 22:13:33 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 99ms (Views: 46.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Sun Jun 05 22:16:12 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (5.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 59ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:16:17 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 36ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:16:18 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 36ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:16:20 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:16:20 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered pages/home.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:16:20 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:16:23 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 38ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Sun Jun 05 22:16:26 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (6.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 130ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at Sun Jun 05 22:16:28 +0300 2011
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/about.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 39ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at Sun Jun 05 22:16:30 +0300 2011
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/contact.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:16:31 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Sun Jun 05 22:16:33 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (6.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (80.0ms)
+Completed 200 OK in 112ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Sun Jun 05 22:16:35 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users`
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 63ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Sun Jun 05 22:17:26 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 160ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:17:36 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 37ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:21:06 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (45.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 83ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Jun 05 22:27:02 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered pages/home.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 129ms (Views: 128.0ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (76.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (63.0ms)[0m  CREATE TABLE `microposts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `content` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (20.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (42.0ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (21.0ms)[0m  [1mSHOW KEYS FROM `users`[0m
+  [1m[35mSQL (47.0ms)[0m  CREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)
+  [1m[36mSQL (2.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (9.0ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (42.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (3.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110605182449')[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110524081303')
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110524081339')[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+  [1m[36mSQL (184.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (2.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (46.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateMicroposts (20110524081303)
+Migrating to CreateUsers (20110524081339)
+Migrating to AddEmailUniquenessIndex (20110605182449)
+Migrating to AddPasswordToUsers (20110606123730)
+  [1m[35mSQL (308.0ms)[0m  ALTER TABLE `users` ADD `encrypted_password` varchar(255)
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110606123730')[0m
+  [1m[35mSQL (2.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (5.0ms)[0m  [1mdescribe `microposts`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `microposts`
+  [1m[36mSQL (4.0ms)[0m  [1mdescribe `users`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `users`
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (194.0ms)[0m  DROP DATABASE IF EXISTS `tw_test`
+  [1m[36mSQL (10.0ms)[0m  [1mCREATE DATABASE `tw_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (25.0ms)[0m  [1mCREATE TABLE `microposts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `content` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (32.0ms)[0m  [1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime, `encrypted_password` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `users`
+  [1m[36mSQL (27.0ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [1m[35mSQL (3.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (7.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `schema_migrations`
+  [1m[36mSQL (20.0ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [1m[35mSQL (4.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110606123730')
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110524081303')[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110524081339')
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110605182449')[0m
+  [1m[36mSQL (203.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (2.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (29.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateMicroposts (20110524081303)
+Migrating to CreateUsers (20110524081339)
+Migrating to AddEmailUniquenessIndex (20110605182449)
+Migrating to AddPasswordToUsers (20110606123730)
+Migrating to AddSaltToUsers (20110606141045)
+  [1m[35mSQL (156.0ms)[0m  ALTER TABLE `users` ADD `salt` varchar(255)
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110606141045')[0m
+  [1m[35mSQL (3.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (5.0ms)[0m  [1mdescribe `microposts`[0m
+  [1m[35mSQL (38.0ms)[0m  SHOW KEYS FROM `microposts`
+  [1m[36mSQL (5.0ms)[0m  [1mdescribe `users`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `users`
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (250.0ms)[0m  DROP DATABASE IF EXISTS `tw_test`
+  [1m[36mSQL (10.0ms)[0m  [1mCREATE DATABASE `tw_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (8.0ms)[0m  [1mCREATE TABLE `microposts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `content` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (11.0ms)[0m  [1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime, `encrypted_password` varchar(255), `salt` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (2.0ms)[0m  SHOW KEYS FROM `users`
+  [1m[36mSQL (36.0ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [1m[35mSQL (2.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (6.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `schema_migrations`
+  [1m[36mSQL (15.0ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [1m[35mSQL (2.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110606141045')
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110524081303')[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110524081339')
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110605182449')[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110606123730')
+  [1m[36mSQL (74.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (2.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateMicroposts (20110524081303)
+Migrating to CreateUsers (20110524081339)
+Migrating to AddEmailUniquenessIndex (20110605182449)
+Migrating to AddPasswordToUsers (20110606123730)
+Migrating to AddSaltToUsers (20110606141045)
+  [1m[35mSQL (2.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (2.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (4.0ms)[0m  [1mdescribe `microposts`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `microposts`
+  [1m[36mSQL (4.0ms)[0m  [1mdescribe `users`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `users`
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (14.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (91.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (40.0ms)[0m  SELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('mhartl@example.com')) LIMIT 1
+  [1m[36mSQL (4.0ms)[0m  [1mdescribe `users`[0m
+  [1m[35mAREL (57.0ms)[0m  INSERT INTO `users` (`updated_at`, `created_at`, `salt`, `name`, `encrypted_password`, `email`) VALUES ('2011-06-07 13:50:28', '2011-06-07 13:50:28', 'c4fbe697fc4d7d15e209247f55742892aa38f5a3c7d75faf64c77c3ff2d6166b', 'Michael Hartl', '1ea65abc96f3767c938154c41161608d833bacd20a5a7356062573082e93e470', 'mhartl@example.com')
+  [1m[36mSQL (1.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSQL (16.0ms)[0m  ROLLBACK
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('mhartl@example.com')) LIMIT 1
+  [1m[36mSQL (4.0ms)[0m  [1mdescribe `users`[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `name`, `created_at`, `encrypted_password`, `email`, `salt`) VALUES ('2011-06-07 13:52:23', 'Michael Hartl', '2011-06-07 13:52:23', 'bd135add1a01a97464329b50cf2471cded97f55ecfbb81547dd487b8491067a9', 'mhartl@example.com', 'd21083b7cd3613d49f41a5ce952f2aa4bc27e246c321ef028d08bdb2526c6ed3')
+  [1m[36mSQL (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (6.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`email` = 'mhartl@example.com') LIMIT 1
+  [1m[36mSQL (2.0ms)[0m  [1mROLLBACK[0m
+  [1m[36mSQL (46.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (72.0ms)[0m  CREATE TABLE `microposts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `content` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (8.0ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime, `encrypted_password` varchar(255), `salt` varchar(255)) ENGINE=InnoDB
+  [1m[36mSQL (36.0ms)[0m  [1mSHOW KEYS FROM `users`[0m
+  [1m[35mSQL (46.0ms)[0m  CREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (23.0ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (26.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (3.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110606141045')[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110524081303')
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110524081339')[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110605182449')
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110606123730')[0m
+  [1m[35mSQL (2.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+
+
+Started GET "/signup" for 127.0.0.1 at Tue Jun 07 17:49:54 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (100.0ms)
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (167.0ms)
+Completed 200 OK in 264ms (Views: 191.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 07 17:50:00 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 39ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 17:50:10 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (2.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (48.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Completed   in 404ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=1):
+  app/controllers/users_controller.rb:16:in `show'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (52.0ms)
+WARNING: Can't mass-assign protected attributes: password_confirm
+  [1m[36mSQL (9.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  SHOW TABLES
+  [1m[36mUser Load (34.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('user@example.com')) LIMIT 1[0m
+  [1m[35mSQL (12.0ms)[0m  describe `users`
+  [1m[36mAREL (9.0ms)[0m  [1mINSERT INTO `users` (`name`, `salt`, `created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('Example User', '7562e07eaa098613ef6be33f195531cb935bf6e31d3369ed57e35205b6c9f9eb', '2011-06-07 14:53:55', 'user@example.com', '9998ed5bd6fe838cb33d0144a313e6fc0bf0b5b361d40ab1e42d765cb62296d3', '2011-06-07 14:53:55')[0m
+  [1m[35mSQL (3.0ms)[0m  COMMIT
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 17:55:21 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (2.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (139.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 328ms (Views: 38.0ms | ActiveRecord: 141.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Jun 07 17:56:31 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 62ms (Views: 51.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 17:56:55 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 66ms (Views: 40.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 17:56:56 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 60ms (Views: 36.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 17:56:57 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 78ms (Views: 39.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 17:56:57 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 110ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 17:56:57 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 69ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 17:57:03 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/show.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 103ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 17:57:04 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered users/show.html.erb within layouts/application (128.0ms)
+Completed 200 OK in 219ms (Views: 167.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 17:57:05 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 85ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 17:57:11 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/show.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 85ms (Views: 54.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 17:57:16 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 5492ms (Views: 37.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 17:57:24 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/show.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 116ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 17:57:30 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 63ms (Views: 38.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 17:57:33 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 61ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 17:57:34 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 66ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 17:57:46 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 61ms (Views: 37.0ms | ActiveRecord: 1.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mSQL (6.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (37.0ms)[0m  SELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example@railstutorial.org')) AND (`users`.id <> 1) LIMIT 1
+  [1m[36mAREL (24.0ms)[0m  [1mUPDATE `users` SET `updated_at` = '2011-06-07 15:00:50', `email` = 'example@railstutorial.org' WHERE (`users`.`id` = 1)[0m
+  [1m[35mSQL (2.0ms)[0m  COMMIT
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 18:01:26 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 77ms (Views: 45.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 18:01:31 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/show.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 106ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 18:18:26 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 61ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 18:32:38 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 58ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 18:33:57 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (75.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/show.html.erb within layouts/application (110.0ms)
+Completed 200 OK in 177ms (Views: 135.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 18:34:01 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 60ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 18:35:56 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 179ms (Views: 37.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 18:37:55 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 87ms (Views: 56.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 18:38:11 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 66ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 18:38:16 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 86ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 18:41:07 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 64ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jun 07 18:51:34 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered users/show.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 60ms (Views: 37.0ms | ActiveRecord: 0.0ms)
