@@ -4351,3 +4351,1295 @@ Rendered layouts/_header.html.erb (1.0ms)
 Rendered layouts/_footer.html.erb (0.0ms)
 Rendered users/show.html.erb within layouts/application (20.0ms)
 Completed 200 OK in 60ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (10.0ms)[0m  CREATE TABLE `microposts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `content` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (35.0ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime, `encrypted_password` varchar(255), `salt` varchar(255)) ENGINE=InnoDB
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW KEYS FROM `users`[0m
+  [1m[35mSQL (28.0ms)[0m  CREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)
+  [1m[36mSQL (2.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (9.0ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (25.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (3.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110606141045')[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110524081303')
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110524081339')[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110605182449')
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110606123730')[0m
+  [1m[35mSQL (2.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 14:03:11 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (76.0ms)
+Rendered layouts/_stylesheets.html.erb (20.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (134.0ms)
+Completed 200 OK in 279ms (Views: 196.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 14:06:26 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 75ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 14:12:00 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 66ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 14:12:21 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 64ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 14:12:24 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 73ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 14:13:44 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 79ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 14:14:29 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 62ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 14:14:43 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 56ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 14:15:24 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 77ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 14:19:15 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 85ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 14:20:16 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (7.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/new.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 62ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 08 14:20:24 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at Wed Jun 08 14:20:28 +0300 2011
+  Processing by PagesController#help as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/help.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 08 14:20:29 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 42ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at Wed Jun 08 14:20:30 +0300 2011
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/about.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at Wed Jun 08 14:20:32 +0300 2011
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/contact.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 39ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:27:49 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"sadasdasd"}}
+  [1m[36mSQL (16.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (146.0ms)[0m  SHOW TABLES
+  [1m[36mUser Load (96.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('sadasdasd')) LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+Rendered layouts/_stylesheets.html.erb (14.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 2017ms (Views: 163.0ms | ActiveRecord: 259.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:28:08 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('')) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mROLLBACK[0m
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 75ms (Views: 42.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:34:21 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('')) LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 94ms (Views: 56.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:34:28 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"vgfgj", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"fjfgj"}}
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('fjfgj')) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mROLLBACK[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 68ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:34:31 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"vgfgj", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"fjfgj"}}
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('fjfgj')) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 72ms (Views: 41.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:34:33 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"vgfgj", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"fjfgj"}}
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('fjfgj')) LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mROLLBACK[0m
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 83ms (Views: 45.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:35:46 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"fjfgj"}}
+  [1m[35mSQL (1.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('fjfgj')) LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (24.0ms)
+Completed 406 Not Acceptable in 80ms (Views: 39.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 08 14:35:50 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (60.0ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 108ms (Views: 38.0ms | ActiveRecord: 60.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Wed Jun 08 14:35:59 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (4.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 79ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 14:36:11 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 79ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:36:14 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"s", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('')) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (32.0ms)
+Completed 406 Not Acceptable in 95ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:36:22 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('')) LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mROLLBACK[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (25.0ms)
+Completed 406 Not Acceptable in 76ms (Views: 43.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:37:07 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('')) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/new.html.erb within layouts/application (32.0ms)
+Completed 406 Not Acceptable in 84ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 14:37:20 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (51.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/new.html.erb within layouts/application (83.0ms)
+Completed 200 OK in 120ms (Views: 104.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:37:23 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('')) LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mROLLBACK[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/new.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 85ms (Views: 46.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:38:29 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('')) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 69ms (Views: 38.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:38:33 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('')) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mROLLBACK[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 118ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:38:43 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('')) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 74ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:38:50 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('')) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mROLLBACK[0m
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 76ms (Views: 43.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:42:18 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (1.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('')) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+Rendered users/new.html.erb within layouts/application (76.0ms)
+Completed   in 127ms
+
+ActionView::Template::Error (Missing partial shared/error_messages with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rjs, :rhtml, :rxml, :erb, :builder]} in view paths "F:/QA/twitter/app/views"):
+    1: <h1>Sign up</h1>
+    2: 
+    3: <%= form_for(@user) do |f| %>
+    4:   <%= render 'shared/error_messages' %>   
+    5:   <div class="field">
+    6:     <%= f.label :name %><br />
+    7:     <%= f.text_field :name %>
+  app/views/users/new.html.erb:4:in `_app_views_users_new_html_erb___17573961_71949984_0'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___17573961_71949984_0'
+  app/controllers/users_controller.rb:52:in `create'
+  app/controllers/users_controller.rb:47:in `create'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (50.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (119.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 08 14:42:33 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 45ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Wed Jun 08 14:42:36 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (8.0ms)
+Completed   in 40ms
+
+ActionView::Template::Error (Missing partial shared/error_messages with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rjs, :rhtml, :rxml, :erb, :builder]} in view paths "F:/QA/twitter/app/views"):
+    1: <h1>Sign up</h1>
+    2: 
+    3: <%= form_for(@user) do |f| %>
+    4:   <%= render 'shared/error_messages' %>   
+    5:   <div class="field">
+    6:     <%= f.label :name %><br />
+    7:     <%= f.text_field :name %>
+  app/views/users/new.html.erb:4:in `_app_views_users_new_html_erb___17573961_72874884_0'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___17573961_72874884_0'
+  app/controllers/users_controller.rb:31:in `new'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (28.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 14:42:43 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (8.0ms)
+Completed   in 43ms
+
+ActionView::Template::Error (Missing partial shared/error_messages with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rjs, :rhtml, :rxml, :erb, :builder]} in view paths "F:/QA/twitter/app/views"):
+    1: <h1>Sign up</h1>
+    2: 
+    3: <%= form_for(@user) do |f| %>
+    4:   <%= render 'shared/error_messages' %>   
+    5:   <div class="field">
+    6:     <%= f.label :name %><br />
+    7:     <%= f.text_field :name %>
+  app/views/users/new.html.erb:4:in `_app_views_users_new_html_erb___17573961_72145332_0'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___17573961_72145332_0'
+  app/controllers/users_controller.rb:31:in `new'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (47.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (62.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 14:42:46 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (7.0ms)
+Completed   in 42ms
+
+ActionView::Template::Error (Missing partial shared/error_messages with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rjs, :rhtml, :rxml, :erb, :builder]} in view paths "F:/QA/twitter/app/views"):
+    1: <h1>Sign up</h1>
+    2: 
+    3: <%= form_for(@user) do |f| %>
+    4:   <%= render 'shared/error_messages' %>   
+    5:   <div class="field">
+    6:     <%= f.label :name %><br />
+    7:     <%= f.text_field :name %>
+  app/views/users/new.html.erb:4:in `_app_views_users_new_html_erb___17573961_73488984_0'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___17573961_73488984_0'
+  app/controllers/users_controller.rb:31:in `new'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 14:43:33 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (8.0ms)
+Completed   in 42ms
+
+ActionView::Template::Error (Missing partial shared/error_messages with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rjs, :rhtml, :rxml, :erb, :builder]} in view paths "F:/QA/twitter/app/views"):
+    1: <h1>Sign up</h1>
+    2: 
+    3: <%= form_for(@user) do |f| %>
+    4:   <%= render 'shared/error_messages' %>
+    5:     
+    6:   <div class="field">
+    7:     <%= f.label :name %><br />
+  app/views/users/new.html.erb:4:in `_app_views_users_new_html_erb___17573961_72562068_0'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___17573961_72562068_0'
+  app/controllers/users_controller.rb:31:in `new'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 14:43:35 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (7.0ms)
+Completed   in 41ms
+
+ActionView::Template::Error (Missing partial shared/error_messages with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rjs, :rhtml, :rxml, :erb, :builder]} in view paths "F:/QA/twitter/app/views"):
+    1: <h1>Sign up</h1>
+    2: 
+    3: <%= form_for(@user) do |f| %>
+    4:   <%= render 'shared/error_messages' %>
+    5:     
+    6:   <div class="field">
+    7:     <%= f.label :name %><br />
+  app/views/users/new.html.erb:4:in `_app_views_users_new_html_erb___17573961_71767032_0'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___17573961_71767032_0'
+  app/controllers/users_controller.rb:31:in `new'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (48.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (64.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 14:43:45 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (8.0ms)
+Completed   in 40ms
+
+ActionView::Template::Error (Missing partial shared/error_messages with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rjs, :rhtml, :rxml, :erb, :builder]} in view paths "F:/QA/twitter/app/views"):
+    1: <h1>Sign up</h1>
+    2: 
+    3: <%= form_for(@user) do |f| %>
+    4:   <%= render 'shared/error_messages' %>
+    5:     
+    6:   <div class="field">
+    7:     <%= f.label :name %><br />
+  app/views/users/new.html.erb:4:in `_app_views_users_new_html_erb___17573961_73404576_0'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___17573961_73404576_0'
+  app/controllers/users_controller.rb:31:in `new'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 14:43:46 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 60ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:43:51 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('')) LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 75ms (Views: 42.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:44:02 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[36mSQL (71.0ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('')) LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mROLLBACK[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 491ms (Views: 41.0ms | ActiveRecord: 73.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:46:18 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (1.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('')) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+Rendered shared/_error_messages.html.erb (2.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 81ms (Views: 52.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 14:46:36 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 65ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:46:40 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('')) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mROLLBACK[0m
+Rendered shared/_error_messages.html.erb (3.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 81ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:46:45 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('')) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+Rendered shared/_error_messages.html.erb (3.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 84ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:46:50 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"s", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('')) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mROLLBACK[0m
+Rendered shared/_error_messages.html.erb (3.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 82ms (Views: 50.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 14:47:03 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 65ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:50:07 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (1.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('')) LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+Rendered shared/_error_messages.html.erb (3.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 80ms (Views: 48.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:54:22 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('')) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mROLLBACK[0m
+Rendered shared/_error_messages.html.erb (3.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 78ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 14:55:09 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"asd", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('')) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+Rendered shared/_error_messages.html.erb (2.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 120ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 16:09:30 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"1", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"1@gmail.com"}}
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (16.0ms)[0m  SELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('1@gmail.com')) LIMIT 1
+  [1m[36mSQL (15.0ms)[0m  [1mROLLBACK[0m
+Rendered shared/_error_messages.html.erb (16.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (168.0ms)
+Completed 406 Not Acceptable in 1363ms (Views: 299.0ms | ActiveRecord: 31.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 16:10:38 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 149ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 16:11:51 +0300 2011
+
+SyntaxError (F:/QA/twitter/app/controllers/users_controller.rb:83: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (66.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 16:13:49 +0300 2011
+
+SyntaxError (F:/QA/twitter/app/controllers/users_controller.rb:83: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (13.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (531.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (596.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 16:14:06 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"1", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"1@gmail.com"}}
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('1@gmail.com')) LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 72ms (Views: 43.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 16:14:13 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"1", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"1@gmail.com"}}
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('1@gmail.com')) LIMIT 1
+  [1m[36mSQL (11.0ms)[0m  [1mdescribe `users`[0m
+  [1m[35mAREL (106.0ms)[0m  INSERT INTO `users` (`created_at`, `updated_at`, `email`, `salt`, `encrypted_password`, `name`) VALUES ('2011-06-08 13:14:14', '2011-06-08 13:14:14', '1@gmail.com', 'c31dfebeee4d8bab1a4dfca9b8c4ef0a45c58b0597480a95308e890deb5a229f', 'a02af87f34275a42e26973319f0fe845f932141bd5e023d94b8d73c2af8d06a9', '1')
+  [1m[36mSQL (30.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 1046ms
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jun 08 16:14:14 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (88.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 172ms (Views: 50.0ms | ActiveRecord: 88.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Wed Jun 08 16:15:32 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (74.0ms)
+Completed 200 OK in 104ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 16:15:40 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 65ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 08 16:16:27 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 58ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jun 08 16:16:36 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 64ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jun 08 16:17:00 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/show.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 91ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jun 08 16:17:02 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/show.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 64ms (Views: 38.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jun 08 16:17:03 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 65ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jun 08 16:17:03 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 105ms (Views: 39.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jun 08 16:17:04 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 72ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jun 08 16:27:09 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 74ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 08 16:27:51 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered pages/home.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 16:27:53 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 64ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 16:28:24 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"asdasdasd", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"1@gmail.com"}}
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('1@gmail.com')) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mROLLBACK[0m
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 73ms (Views: 43.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 16:28:31 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"asdasdasd", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"2@gmail.com"}}
+  [1m[35mSQL (1.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('2@gmail.com')) LIMIT 1[0m
+  [1m[35mSQL (5.0ms)[0m  describe `users`
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO `users` (`encrypted_password`, `email`, `created_at`, `salt`, `updated_at`, `name`) VALUES ('2bb99dbac13e3dcb8c8bb1ad521f1439ab4a188e0f9fa3f938ad1d129160ff8f', '2@gmail.com', '2011-06-08 13:28:31', '83eb154bd2318bc39a870b8335c62fa3dad3d06247b6d7f75c6fce218a18548c', '2011-06-08 13:28:31', 'asdasdasd')[0m
+  [1m[35mSQL (12.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 66ms
+
+
+Started GET "/users/2" for 127.0.0.1 at Wed Jun 08 16:28:31 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 92ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 08 16:33:33 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 16:33:35 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/new.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 66ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 16:34:01 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"UehSgRaSA6bllcVMNcTk7Bc2jJ3+MQV8vipjC2dSg90=", "utf8"=>"✓", "user"=>{"name"=>"Michael Hartl", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"mhartl@example.com"}}
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('mhartl@example.com')) LIMIT 1[0m
+  [1m[35mSQL (4.0ms)[0m  describe `users`
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO `users` (`salt`, `encrypted_password`, `updated_at`, `created_at`, `email`, `name`) VALUES ('4bba9963f9e2dabe2af28d209f613fda28458b16a80ba01d58065c6bbd49c2dd', '376aa8bdcd6a2bb1fe2a3cb29c32d11a093d65820f9c0e3ef94217fb9e8b515a', '2011-06-08 13:34:01', '2011-06-08 13:34:01', 'mhartl@example.com', 'Michael Hartl')[0m
+  [1m[35mSQL (2.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 37ms
+
+
+Started GET "/users/3" for 127.0.0.1 at Wed Jun 08 16:34:01 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 61ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at Wed Jun 08 16:34:07 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 3) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 64ms (Views: 38.0ms | ActiveRecord: 8.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 1[0m
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 08 16:35:32 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (72.0ms)
+Completed 200 OK in 89ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 16:35:34 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 65ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/create" for 127.0.0.1 at Wed Jun 08 16:37:11 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"create"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 0) LIMIT 1[0m
+Completed   in 34ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=create):
+  app/controllers/users_controller.rb:16:in `show'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (78.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (128.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 08 16:37:21 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users`
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (68.0ms)
+Completed 200 OK in 118ms (Views: 106.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Wed Jun 08 16:37:25 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 84ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 16:37:36 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 94ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 08 16:37:38 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered pages/home.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 77ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at Wed Jun 08 16:37:40 +0300 2011
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/about.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 40ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at Wed Jun 08 16:37:41 +0300 2011
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/contact.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 36ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at Wed Jun 08 16:37:42 +0300 2011
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered pages/about.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 08 16:37:45 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 35ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 16:37:46 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 90ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 16:37:48 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"VOOxH9Kpfp1uX91n6f9yhyvkfj/CdNJ8K1emm3lVETI=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('')) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mROLLBACK[0m
+Rendered shared/_error_messages.html.erb (50.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/new.html.erb within layouts/application (80.0ms)
+Completed 200 OK in 155ms (Views: 106.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 08 16:37:55 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jun 08 16:37:55 +0300 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered users/new.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 83ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jun 08 16:37:58 +0300 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"VOOxH9Kpfp1uX91n6f9yhyvkfj/CdNJ8K1emm3lVETI=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('')) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  ROLLBACK
+Rendered shared/_error_messages.html.erb (2.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (11.0ms)
+Rendered users/new.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 109ms (Views: 54.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 08 16:38:05 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 08 16:38:07 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (77.0ms)
+Completed 200 OK in 99ms (Views: 99.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 08 16:38:08 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 08 16:38:08 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 08 16:38:08 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 36ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 08 16:38:08 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 08 16:38:09 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 08 16:38:09 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 38ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 08 16:38:09 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 08 16:38:09 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 08 16:38:10 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 08 16:38:20 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 36ms (Views: 36.0ms | ActiveRecord: 0.0ms)
