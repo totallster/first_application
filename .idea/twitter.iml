@@ -18,6 +18,12 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="faker" version="0.3.1" bound="EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="gravatar_image_tag" version="1.0.0.pre2" bound="EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
@@ -49,6 +55,12 @@
     <requirement>
       <requirement>
         <dependency name="webrat" version="0.7.1" bound="EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="will_paginate" version="3.0.pre2" bound="EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
@@ -102,6 +114,8 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] factory_girl_rails (v1.0, C:/Ruby187/lib/ruby/gems/1.8/gems/factory_girl_rails-1.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] factory_girl (v2.0.0.beta2, C:/Ruby187/lib/ruby/gems/1.8/gems/factory_girl-2.0.0.beta2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] gravatar_image_tag (v1.0.0.pre2, C:/Ruby187/lib/ruby/gems/1.8/gems/gravatar_image_tag-1.0.0.pre2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] faker (v0.3.1, C:/Ruby187/lib/ruby/gems/1.8/gems/faker-0.3.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] will_paginate (v3.0.pre2, C:/Ruby187/lib/ruby/gems/1.8/gems/will_paginate-3.0.pre2)" level="application" />
   </component>
 </module>
 
