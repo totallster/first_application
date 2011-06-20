@@ -16,7 +16,11 @@ class UsersController < ApplicationController
 
   def new
     @title = "Sign up"
-    @user = User.new
+      if !current_user.nil?
+        redirect_to root_path
+      else
+        @user = User.new
+      end
   end
 
   def edit
@@ -38,12 +42,10 @@ class UsersController < ApplicationController
   end
 
   def update
-    @user = User.find(params[:id])
     if @user.update_attributes(params[:user])
       flash[:success] = "Profile updated."
       redirect_to @user
     else
-      @title = "Edit user"
       render 'edit'
     end
   end
