@@ -18722,3 +18722,2377 @@ Rendered layouts/_header.html.erb (3.0ms)
 Rendered layouts/_footer.html.erb (1.0ms)
 Rendered users/index.html.erb within layouts/application (66.0ms)
 Completed 200 OK in 115ms (Views: 86.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/signout" for 127.0.0.1 at Mon Jun 20 17:39:37 +0300 2011
+  Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 20 17:39:37 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1[0m
+Rendered layouts/_header.html.erb (69.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (87.0ms)
+Completed 200 OK in 103ms (Views: 103.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at Mon Jun 20 17:39:38 +0300 2011
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 20 17:39:38 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1[0m
+Rendered layouts/_header.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 85ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jun 20 17:39:41 +0300 2011
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1[0m
+Rendered layouts/_header.html.erb (29.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered sessions/new.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 74ms (Views: 73.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Mon Jun 20 17:39:52 +0300 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"example-100@railstutorial.org"}, "authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "utf8"=>"✓"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`email` = 'example-100@railstutorial.org') LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1
+Rendered layouts/_header.html.erb (6.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered sessions/new.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 75ms (Views: 50.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Mon Jun 20 17:40:29 +0300 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"example-99@railstutorial.org"}, "authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "utf8"=>"✓"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`email` = 'example-99@railstutorial.org') LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1[0m
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered sessions/new.html.erb within layouts/application (68.0ms)
+Completed 200 OK in 119ms (Views: 82.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Mon Jun 20 17:40:46 +0300 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"example-99@railstutorial.org"}, "authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "utf8"=>"✓"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`email` = 'example-99@railstutorial.org') LIMIT 1
+Redirected to http://localhost:3000/users/100
+Completed 302 Found in 33ms
+
+
+Started GET "/users/100" for 127.0.0.1 at Mon Jun 20 17:40:46 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 100) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 100) LIMIT 1
+Rendered layouts/_header.html.erb (9.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/show.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 109ms (Views: 56.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/" for 127.0.0.1 at Mon Jun 20 17:41:17 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 100) LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+Rendered users/_user.html.erb (30.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 107ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at Mon Jun 20 17:41:22 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 100) LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 90[0m
+Rendered users/_user.html.erb (12.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 89ms (Views: 60.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/100" for 127.0.0.1 at Mon Jun 20 17:41:27 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"100"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 100) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 100) LIMIT 1[0m
+Rendered layouts/_header.html.erb (6.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 76ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/100" for 127.0.0.1 at Mon Jun 20 17:41:31 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "id"=>"100"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 100) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 100) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (1.0ms)[0m  [1mDELETE FROM `users` WHERE (`users`.`id` = 100)[0m
+  [1m[35mSQL (12.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/users
+Completed 302 Found in 44ms
+
+
+Started GET "/users" for 127.0.0.1 at Mon Jun 20 17:41:32 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 100) LIMIT 1[0m
+Redirected to http://localhost:3000/signin
+Completed 302 Found in 23ms
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jun 20 17:41:32 +0300 2011
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 100) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 100) LIMIT 1[0m
+Rendered layouts/_header.html.erb (27.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered sessions/new.html.erb within layouts/application (50.0ms)
+Completed 200 OK in 67ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Mon Jun 20 17:41:55 +0300 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"example-99@railstutorial.org"}, "authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "utf8"=>"✓"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`email` = 'example-99@railstutorial.org') LIMIT 1
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 100) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 100) LIMIT 1
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered sessions/new.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 66ms (Views: 42.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jun 20 17:43:15 +0300 2011
+  Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 25ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 20 17:43:15 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_header.html.erb (30.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (49.0ms)
+Completed 200 OK in 66ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jun 20 17:43:17 +0300 2011
+  Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 27ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 20 17:43:17 +0300 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered layouts/_header.html.erb (30.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (51.0ms)
+Completed 200 OK in 68ms (Views: 65.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Mon Jun 20 17:43:26 +0300 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"example-98@railstutorial.org"}, "authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "utf8"=>"✓"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`email` = 'example-98@railstutorial.org') LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 28ms
+
+
+Started GET "/users" for 127.0.0.1 at Mon Jun 20 17:43:26 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 99) LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (35.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 116ms (Views: 87.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at Mon Jun 20 17:43:34 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 99) LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 90
+Rendered users/_user.html.erb (12.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 136ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/99" for 127.0.0.1 at Mon Jun 20 17:43:38 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "id"=>"99"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 99) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 99) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM `users` WHERE (`users`.`id` = 99)
+  [1m[36mSQL (3.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 34ms
+
+
+Started GET "/users" for 127.0.0.1 at Mon Jun 20 17:43:38 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 99) LIMIT 1
+Redirected to http://localhost:3000/signin
+Completed 302 Found in 25ms
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jun 20 17:43:38 +0300 2011
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 99) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 99) LIMIT 1
+Rendered layouts/_header.html.erb (27.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered sessions/new.html.erb within layouts/application (99.0ms)
+Completed 200 OK in 117ms (Views: 116.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Mon Jun 20 17:48:12 +0300 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"example-97@railstutorial.org"}, "authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "utf8"=>"✓"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`email` = 'example-97@railstutorial.org') LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 29ms
+
+
+Started GET "/users" for 127.0.0.1 at Mon Jun 20 17:48:12 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (31.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 107ms (Views: 77.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at Mon Jun 20 17:48:17 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 90
+Rendered users/_user.html.erb (11.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/index.html.erb within layouts/application (49.0ms)
+Completed 200 OK in 98ms (Views: 66.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/98" for 127.0.0.1 at Mon Jun 20 17:48:19 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"98"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (4.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1
+Rendered layouts/_header.html.erb (10.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (49.0ms)
+Completed 200 OK in 120ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/98" for 127.0.0.1 at Mon Jun 20 17:48:24 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "id"=>"98"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1[0m
+  [1m[35mSQL (66.0ms)[0m  SHOW TABLES
+Completed   in 103ms
+
+NoMethodError (undefined method `current_user' for #<Class:0x88a0988>):
+  app/controllers/users_controller.rb:54:in `destroy'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.0ms)
+
+
+Started GET "/users/98" for 127.0.0.1 at Mon Jun 20 17:48:28 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"98"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 80ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/98" for 127.0.0.1 at Mon Jun 20 17:48:30 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"98"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1
+Rendered layouts/_header.html.erb (6.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 78ms (Views: 48.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/98" for 127.0.0.1 at Mon Jun 20 17:49:14 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "id"=>"98"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1[0m
+  [1m[35mSQL (2.0ms)[0m  SHOW TABLES
+Completed   in 29ms
+
+NoMethodError (undefined method `admin_user' for #<Class:0x870bdc0>):
+  app/controllers/users_controller.rb:54:in `destroy'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started POST "/users/98" for 127.0.0.1 at Mon Jun 20 17:50:29 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "id"=>"98"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1[0m
+Completed   in 86ms
+
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  app/controllers/users_controller.rb:54:in `destroy'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.0ms)
+
+
+Started POST "/users/98" for 127.0.0.1 at Mon Jun 20 17:51:09 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "id"=>"98"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1
+Completed   in 26ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/users_controller.rb:54:in `[]'
+  app/controllers/users_controller.rb:54:in `destroy'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.0ms)
+
+
+Started POST "/users/98" for 127.0.0.1 at Mon Jun 20 17:51:48 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "id"=>"98"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1
+Completed   in 27ms
+
+NoMethodError (undefined method `admin_user' for #<User:0x85a6388>):
+  app/controllers/users_controller.rb:54:in `destroy'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started POST "/users/98" for 127.0.0.1 at Mon Jun 20 17:52:13 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "id"=>"98"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 71ms
+
+
+Started GET "/users" for 127.0.0.1 at Mon Jun 20 17:52:13 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (30.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 104ms (Views: 75.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at Mon Jun 20 17:52:18 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 90
+Rendered users/_user.html.erb (12.0ms)
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/index.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 107ms (Views: 72.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/97" for 127.0.0.1 at Mon Jun 20 17:52:24 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "id"=>"97"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 32ms
+
+
+Started GET "/users" for 127.0.0.1 at Mon Jun 20 17:52:25 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (46.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (87.0ms)
+Completed 200 OK in 142ms (Views: 107.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at Mon Jun 20 17:52:29 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 90
+Rendered users/_user.html.erb (13.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 109ms (Views: 75.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/98" for 127.0.0.1 at Mon Jun 20 17:52:34 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"98"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1
+Rendered layouts/_header.html.erb (9.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/show.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 111ms (Views: 71.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/97" for 127.0.0.1 at Mon Jun 20 17:53:26 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "id"=>"97"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 97) LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM `users` WHERE (`users`.`id` = 97)
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 32ms
+
+
+Started GET "/users" for 127.0.0.1 at Mon Jun 20 17:53:26 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (29.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (58.0ms)
+Completed 200 OK in 109ms (Views: 74.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at Mon Jun 20 17:53:32 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 90
+Rendered users/_user.html.erb (9.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/index.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 89ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/98" for 127.0.0.1 at Mon Jun 20 17:53:38 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "id"=>"98"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM `users` WHERE (`users`.`id` = 98)
+  [1m[36mSQL (60.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 90ms
+
+
+Started GET "/users" for 127.0.0.1 at Mon Jun 20 17:53:38 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1
+Redirected to http://localhost:3000/signin
+Completed 302 Found in 25ms
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jun 20 17:53:38 +0300 2011
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 98) LIMIT 1
+Rendered layouts/_header.html.erb (29.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered sessions/new.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 70ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Mon Jun 20 17:55:52 +0300 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"example-95@railstutorial.org"}, "authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "utf8"=>"✓"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`email` = 'example-95@railstutorial.org') LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 28ms
+
+
+Started GET "/users" for 127.0.0.1 at Mon Jun 20 17:55:52 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (28.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (49.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (103.0ms)
+Completed 200 OK in 144ms (Views: 118.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at Mon Jun 20 17:55:56 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 90
+Rendered users/_user.html.erb (7.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 87ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at Mon Jun 20 17:55:57 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 90
+Rendered users/_user.html.erb (8.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/index.html.erb within layouts/application (49.0ms)
+Completed 200 OK in 156ms (Views: 74.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/96" for 127.0.0.1 at Mon Jun 20 17:56:00 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+Rendered layouts/_header.html.erb (6.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 75ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/95" for 127.0.0.1 at Mon Jun 20 17:56:05 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "id"=>"95"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+Completed   in 90ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/users_controller.rb:54:in `current_user?'
+  app/controllers/users_controller.rb:54:in `destroy'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.0ms)
+
+
+Started POST "/users/95" for 127.0.0.1 at Mon Jun 20 17:56:46 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "id"=>"95"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+Completed   in 26ms
+
+NameError (undefined local variable or method `user' for #<UsersController:0x87b2e78>):
+  app/controllers/users_controller.rb:54:in `destroy'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started POST "/users/96" for 127.0.0.1 at Mon Jun 20 17:59:14 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "id"=>"96"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 26ms
+
+
+Started GET "/users" for 127.0.0.1 at Mon Jun 20 17:59:14 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (82.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (116.0ms)
+Completed 200 OK in 160ms (Views: 132.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/users/31" for 127.0.0.1 at Mon Jun 20 17:59:22 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "id"=>"31"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 28ms
+
+
+Started GET "/users" for 127.0.0.1 at Mon Jun 20 17:59:22 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (38.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 116ms (Views: 87.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/30" for 127.0.0.1 at Mon Jun 20 17:59:32 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "id"=>"30"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 26ms
+
+
+Started GET "/users" for 127.0.0.1 at Mon Jun 20 17:59:32 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (39.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 120ms (Views: 90.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/7" for 127.0.0.1 at Mon Jun 20 17:59:50 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "id"=>"7"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 28ms
+
+
+Started GET "/users" for 127.0.0.1 at Mon Jun 20 17:59:50 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (38.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 124ms (Views: 87.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users/7" for 127.0.0.1 at Mon Jun 20 18:00:17 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "id"=>"7"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 28ms
+
+
+Started GET "/users" for 127.0.0.1 at Mon Jun 20 18:00:17 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (49.0ms)
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (89.0ms)
+Completed 200 OK in 147ms (Views: 110.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/9" for 127.0.0.1 at Mon Jun 20 18:00:21 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DiZ6lGlAE2JP2g7rr4Yv7136ogyUFa+pA+y33wjwP9M=", "id"=>"9"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 27ms
+
+
+Started GET "/users" for 127.0.0.1 at Mon Jun 20 18:00:21 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (38.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (72.0ms)
+Completed 200 OK in 123ms (Views: 89.0ms | ActiveRecord: 1.0ms)
+DEPRECATION WARNING: config.action_controller.session_store= has been deprecated. Please use config.session_store(name, options) instead. (called from F:/QA/twitter/config/environment.rb:7)
+
+
+Started GET "/users/96/edit" for 127.0.0.1 at Wed Jun 22 15:58:37 +0300 2011
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mSQL (29.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (13.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1
+Redirected to http://localhost:3000/signin
+Completed 302 Found in 228ms
+
+
+Started GET "/signin" for 127.0.0.1 at Wed Jun 22 15:58:42 +0300 2011
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1
+Rendered layouts/_header.html.erb (26.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered sessions/new.html.erb within layouts/application (179.0ms)
+Completed 200 OK in 230ms (Views: 229.0ms | ActiveRecord: 43.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Wed Jun 22 15:58:57 +0300 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"example-95@railstutorial.org"}, "authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "utf8"=>"✓"}
+  [1m[36mUser Load (25.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`email` = 'example-95@railstutorial.org') LIMIT 1[0m
+Redirected to http://localhost:3000/users/96/edit
+Completed 302 Found in 214ms
+
+
+Started GET "/users/96/edit" for 127.0.0.1 at Wed Jun 22 15:58:57 +0300 2011
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"96"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/edit.html.erb within layouts/application (91.0ms)
+Completed 200 OK in 210ms (Views: 140.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 15:59:02 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (23.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (38.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 147ms (Views: 93.0ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at Wed Jun 22 15:59:07 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 90
+Rendered users/_user.html.erb (8.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 94ms (Views: 64.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/96" for 127.0.0.1 at Wed Jun 22 15:59:11 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+Rendered layouts/_header.html.erb (6.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 88ms (Views: 53.0ms | ActiveRecord: 26.0ms)
+
+
+Started POST "/users/96" for 127.0.0.1 at Wed Jun 22 15:59:17 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"96"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+Completed   in 28ms
+
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  app/controllers/users_controller.rb:61:in `destroy'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (51.0ms)
+
+
+Started POST "/users/96" for 127.0.0.1 at Wed Jun 22 15:59:47 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"96"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 30ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 15:59:47 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (40.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (73.0ms)
+Completed 200 OK in 164ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at Wed Jun 22 15:59:52 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 90
+Rendered users/_user.html.erb (8.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 93ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/95" for 127.0.0.1 at Wed Jun 22 15:59:56 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"95"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 95) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 95) LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  BEGIN
+  [1m[36mAREL (37.0ms)[0m  [1mDELETE FROM `users` WHERE (`users`.`id` = 95)[0m
+  [1m[35mSQL (21.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/users
+Completed 302 Found in 96ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 15:59:56 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+Rendered users/_user.html.erb (46.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/index.html.erb within layouts/application (83.0ms)
+Completed 200 OK in 134ms (Views: 100.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at Wed Jun 22 16:00:00 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 90[0m
+Rendered users/_user.html.erb (9.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 98ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/96" for 127.0.0.1 at Wed Jun 22 16:00:15 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"96"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 45ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:00:15 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (69.0ms)
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (8.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/index.html.erb within layouts/application (120.0ms)
+Completed 200 OK in 231ms (Views: 143.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at Wed Jun 22 16:00:23 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 90
+Rendered users/_user.html.erb (7.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 98ms (Views: 65.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users?page=1" for 127.0.0.1 at Wed Jun 22 16:00:55 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+  [1m[35mUser Load (19.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+Rendered users/_user.html.erb (41.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/index.html.erb within layouts/application (83.0ms)
+Completed 200 OK in 166ms (Views: 111.0ms | ActiveRecord: 20.0ms)
+
+
+Started POST "/users/1" for 127.0.0.1 at Wed Jun 22 16:01:00 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 32ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:01:00 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (51.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/index.html.erb within layouts/application (91.0ms)
+Completed 200 OK in 145ms (Views: 110.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at Wed Jun 22 16:01:33 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 90
+Rendered users/_user.html.erb (5.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 76ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/96" for 127.0.0.1 at Wed Jun 22 16:01:37 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"96"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+Completed   in 28ms
+
+NoMethodError (undefined method `current_user?' for #<User:0x8a97c50>):
+  app/controllers/users_controller.rb:61:in `destroy'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.0ms)
+
+
+Started POST "/users/96" for 127.0.0.1 at Wed Jun 22 16:02:20 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"96"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+Completed   in 80ms
+
+NoMethodError (undefined method `correct_user' for #<User:0x8ce0470>):
+  app/controllers/users_controller.rb:61:in `destroy'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.0ms)
+
+
+Started POST "/users/96" for 127.0.0.1 at Wed Jun 22 16:02:38 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"96"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+Redirected to http://localhost:3000/users
+Completed 302 Found in 28ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:02:38 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 0
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+Rendered users/_user.html.erb (35.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 121ms (Views: 90.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at Wed Jun 22 16:02:43 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 90[0m
+Rendered users/_user.html.erb (7.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 96ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/96" for 127.0.0.1 at Wed Jun 22 16:04:29 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"96"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (1.0ms)[0m  [1mDELETE FROM `users` WHERE (`users`.`id` = 96)[0m
+  [1m[35mSQL (2.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/users
+Completed 302 Found in 30ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:04:29 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (16.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+Redirected to http://localhost:3000/signin
+Completed 302 Found in 78ms
+
+
+Started GET "/signin" for 127.0.0.1 at Wed Jun 22 16:04:30 +0300 2011
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+Rendered layouts/_header.html.erb (27.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered sessions/new.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 63.0ms | ActiveRecord: 19.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Wed Jun 22 16:04:39 +0300 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"example-95@railstutorial.org"}, "authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "utf8"=>"✓"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`email` = 'example-95@railstutorial.org') LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 96) LIMIT 1
+Rendered layouts/_header.html.erb (6.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered sessions/new.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 79ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Wed Jun 22 16:05:07 +0300 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"example-93@railstutorial.org"}, "authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "utf8"=>"✓"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`email` = 'example-93@railstutorial.org') LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 35ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:05:07 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (48.0ms)
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/index.html.erb within layouts/application (88.0ms)
+Completed 200 OK in 139ms (Views: 106.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at Wed Jun 22 16:05:10 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 90
+Rendered users/_user.html.erb (6.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 92ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/94" for 127.0.0.1 at Wed Jun 22 16:05:50 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"94"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1
+Redirected to http://localhost:3000/users
+Completed 302 Found in 26ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:05:50 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+Rendered users/_user.html.erb (30.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 148ms (Views: 77.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users?page=2" for 127.0.0.1 at Wed Jun 22 16:05:55 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 30[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (42.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (121.0ms)
+Completed 200 OK in 170ms (Views: 138.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at Wed Jun 22 16:05:58 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 90
+Rendered users/_user.html.erb (6.0ms)
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 86ms (Views: 56.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/93" for 127.0.0.1 at Wed Jun 22 16:06:02 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"93"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 93) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 93) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (1.0ms)[0m  [1mDELETE FROM `users` WHERE (`users`.`id` = 93)[0m
+  [1m[35mSQL (3.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/users
+Completed 302 Found in 34ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:06:02 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 0
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+Rendered users/_user.html.erb (39.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (74.0ms)
+Completed 200 OK in 123ms (Views: 91.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at Wed Jun 22 16:06:04 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 90[0m
+Rendered users/_user.html.erb (4.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 130ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/94" for 127.0.0.1 at Wed Jun 22 16:07:52 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"94"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1
+Redirected to http://localhost:3000/users
+Completed 302 Found in 25ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:07:52 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+Rendered users/_user.html.erb (79.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 152ms (Views: 125.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at Wed Jun 22 16:07:56 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[35mUser Load (86.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 90[0m
+Rendered users/_user.html.erb (6.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (3.0ms)
+Rendered users/index.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 201ms (Views: 70.0ms | ActiveRecord: 86.0ms)
+
+
+Started POST "/users/92" for 127.0.0.1 at Wed Jun 22 16:08:01 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"92"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1
+Redirected to http://localhost:3000/users
+Completed 302 Found in 31ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:08:01 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 0
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+Rendered users/_user.html.erb (48.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (86.0ms)
+Completed 200 OK in 140ms (Views: 105.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at Wed Jun 22 16:08:03 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 90[0m
+Rendered users/_user.html.erb (4.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/index.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 134ms (Views: 59.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/92" for 127.0.0.1 at Wed Jun 22 16:09:08 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"92"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1
+Completed   in 26ms
+
+NameError (undefined local variable or method `user' for #<UsersController:0x8b42650>):
+  app/controllers/users_controller.rb:61:in `destroy'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started POST "/users/94" for 127.0.0.1 at Wed Jun 22 16:10:12 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"94"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1
+Completed   in 67ms
+
+NoMethodError (undefined method `current_user?' for #<User:0x8ceb018>):
+  app/controllers/users_controller.rb:61:in `destroy'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at Wed Jun 22 16:10:15 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 90
+Rendered users/_user.html.erb (3.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 78ms (Views: 50.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users/92" for 127.0.0.1 at Wed Jun 22 16:10:24 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"92"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+Completed   in 31ms
+
+NoMethodError (undefined method `current_user?' for #<User:0x8931ed0>):
+  app/controllers/users_controller.rb:61:in `destroy'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.0ms)
+
+
+Started POST "/users/94" for 127.0.0.1 at Wed Jun 22 16:11:47 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"94"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (1.0ms)[0m  DELETE FROM `users` WHERE (`users`.`id` = 94)
+  [1m[36mSQL (3.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 31ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:11:47 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1
+Redirected to http://localhost:3000/signin
+Completed 302 Found in 22ms
+
+
+Started GET "/signin" for 127.0.0.1 at Wed Jun 22 16:11:47 +0300 2011
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 94) LIMIT 1
+Rendered layouts/_header.html.erb (24.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered sessions/new.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 60ms (Views: 60.0ms | ActiveRecord: 6.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Wed Jun 22 16:12:18 +0300 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"example-91@railstutorial.org"}, "authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "utf8"=>"✓"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`email` = 'example-91@railstutorial.org') LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 34ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:12:18 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (53.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 149ms (Views: 112.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at Wed Jun 22 16:12:21 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 90
+Rendered users/_user.html.erb (4.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 132ms (Views: 70.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/92" for 127.0.0.1 at Wed Jun 22 16:12:33 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"92"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+Completed   in 29ms
+
+NameError (undefined local variable or method `user' for #<UsersController:0x8ad5228>):
+  app/controllers/users_controller.rb:61:in `destroy'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.0ms)
+
+
+Started POST "/users/92" for 127.0.0.1 at Wed Jun 22 16:13:11 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"92"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 70ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:13:11 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (30.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 104ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/1" for 127.0.0.1 at Wed Jun 22 16:13:16 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+  [1m[35mUser Load (6.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Redirected to http://localhost:3000/users
+Completed 302 Found in 90ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:13:16 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+Rendered users/_user.html.erb (39.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 127ms (Views: 95.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/7" for 127.0.0.1 at Wed Jun 22 16:13:20 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"7"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 7) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 7) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM `users` WHERE (`users`.`id` = 7)
+  [1m[36mSQL (52.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 84ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:13:20 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (39.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (72.0ms)
+Completed 200 OK in 122ms (Views: 90.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users?page=3" for 127.0.0.1 at Wed Jun 22 16:13:25 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 60
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+Rendered users/_user.html.erb (83.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (114.0ms)
+Completed 200 OK in 164ms (Views: 130.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/users/92" for 127.0.0.1 at Wed Jun 22 16:20:10 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"92"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+Completed   in 83ms
+
+NoMethodError (undefined method `current_user?' for #<User:0x8b22880>):
+  app/controllers/users_controller.rb:54:in `destroy'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (48.0ms)
+
+
+Started GET "/users?page=3" for 127.0.0.1 at Wed Jun 22 16:20:22 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 60[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (115.0ms)
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (182.0ms)
+Completed 200 OK in 398ms (Views: 369.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/92" for 127.0.0.1 at Wed Jun 22 16:20:53 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"92"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+Completed   in 28ms
+
+NoMethodError (undefined method `current_user?' for #<User:0x8ac7ec0>):
+  app/controllers/users_controller.rb:54:in `destroy'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.0ms)
+
+
+Started POST "/users/92" for 127.0.0.1 at Wed Jun 22 16:21:44 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"92"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+Completed   in 70ms
+
+NoMethodError (undefined method `current_user' for #<User:0x8cc3a00>):
+  app/controllers/users_controller.rb:54:in `destroy'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started POST "/users/92" for 127.0.0.1 at Wed Jun 22 16:22:18 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"92"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+Redirected to http://localhost:3000/users
+Completed 302 Found in 33ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:22:18 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+Rendered users/_user.html.erb (31.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 105ms (Views: 78.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users?page=3" for 127.0.0.1 at Wed Jun 22 16:22:23 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 60[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (39.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (72.0ms)
+Completed 200 OK in 151ms (Views: 92.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users/91" for 127.0.0.1 at Wed Jun 22 16:22:27 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"91"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 91) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 91) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.0ms)[0m  [1mDELETE FROM `users` WHERE (`users`.`id` = 91)[0m
+  [1m[35mSQL (23.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/users
+Completed 302 Found in 121ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:22:28 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+Rendered users/_user.html.erb (54.0ms)
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (6.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (101.0ms)
+Completed 200 OK in 161ms (Views: 124.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users?page=3" for 127.0.0.1 at Wed Jun 22 16:22:31 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 60[0m
+Rendered users/_user.html.erb (37.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/index.html.erb within layouts/application (117.0ms)
+Completed 200 OK in 164ms (Views: 133.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users?page=1" for 127.0.0.1 at Wed Jun 22 16:22:37 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (39.0ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 118ms (Views: 87.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/1" for 127.0.0.1 at Wed Jun 22 16:22:41 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Redirected to http://localhost:3000/users
+Completed 302 Found in 29ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:22:41 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+Rendered users/_user.html.erb (34.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (66.0ms)
+Completed 200 OK in 111ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?page=3" for 127.0.0.1 at Wed Jun 22 16:27:10 +0300 2011
+
+SyntaxError (F:/QA/twitter/app/controllers/users_controller.rb:54: syntax error, unexpected '=', expecting kTHEN or ':' or '\n' or ';'
+    if User.find(params[:id]) = current_user
+                               ^
+F:/QA/twitter/app/controllers/users_controller.rb:80: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started GET "/users?page=3" for 127.0.0.1 at Wed Jun 22 16:27:29 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 60[0m
+Rendered users/_user.html.erb (36.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (72.0ms)
+Completed 200 OK in 145ms (Views: 94.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/92" for 127.0.0.1 at Wed Jun 22 16:27:36 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"92"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 58ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:27:36 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (49.0ms)
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (88.0ms)
+Completed 200 OK in 143ms (Views: 107.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/users/1" for 127.0.0.1 at Wed Jun 22 16:27:41 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (1.0ms)[0m  [1mDELETE FROM `users` WHERE (`users`.`id` = 1)[0m
+  [1m[35mSQL (2.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/users
+Completed 302 Found in 40ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:27:41 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 0
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+Rendered users/_user.html.erb (54.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (90.0ms)
+Completed 200 OK in 142ms (Views: 107.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users/2" for 127.0.0.1 at Wed Jun 22 16:27:45 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+  [1m[36mUser Load (27.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 2) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM `users` WHERE (`users`.`id` = 2)
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 64ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:27:45 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (53.0ms)
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 149ms (Views: 112.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users?page=3" for 127.0.0.1 at Wed Jun 22 16:27:48 +0300 2011
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 60
+Rendered users/_user.html.erb (42.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (80.0ms)
+Completed 200 OK in 187ms (Views: 100.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/92" for 127.0.0.1 at Wed Jun 22 16:27:52 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"92"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+Redirected to http://localhost:3000/users
+Completed 302 Found in 32ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:27:52 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+Rendered users/_user.html.erb (89.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (130.0ms)
+Completed 200 OK in 179ms (Views: 147.0ms | ActiveRecord: 30.0ms)
+
+
+Started GET "/users/92" for 127.0.0.1 at Wed Jun 22 16:27:55 +0300 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"92"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+Rendered layouts/_header.html.erb (7.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 97ms (Views: 55.0ms | ActiveRecord: 1.0ms)
+DEPRECATION WARNING: config.action_controller.session_store= has been deprecated. Please use config.session_store(name, options) instead. (called from F:/QA/twitter/config/environment.rb:7)
+  [1m[36mSQL (11.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (73.0ms)[0m  CREATE TABLE `microposts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `content` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (9.0ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime, `encrypted_password` varchar(255), `salt` varchar(255), `admin` tinyint(1) DEFAULT 0) ENGINE=InnoDB
+  [1m[36mSQL (28.0ms)[0m  [1mSHOW KEYS FROM `users`[0m
+  [1m[35mSQL (47.0ms)[0m  CREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)
+  [1m[36mSQL (2.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (6.0ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (18.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (2.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mSQL (33.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110617115111')[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110524081303')
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110524081339')[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110605182449')
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110606123730')[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110606141045')
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+DEPRECATION WARNING: config.action_controller.session_store= has been deprecated. Please use config.session_store(name, options) instead. (called from F:/QA/twitter/config/environment.rb:7)
+  [1m[36mSQL (116.0ms)[0m  [1mDROP DATABASE IF EXISTS `tw_database`[0m
+  [1m[35mSQL (1.0ms)[0m  CREATE DATABASE `tw_database` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (10.0ms)[0m  CREATE TABLE `microposts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `content` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (8.0ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime, `encrypted_password` varchar(255), `salt` varchar(255), `admin` tinyint(1) DEFAULT 0) ENGINE=InnoDB
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW KEYS FROM `users`[0m
+  [1m[35mSQL (19.0ms)[0m  CREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)
+  [1m[36mSQL (2.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (10.0ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (22.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (3.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110617115111')[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110524081303')
+  [1m[36mSQL (24.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110524081339')[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110605182449')
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110606123730')[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110606141045')
+  [1m[36mSQL (2.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (1.0ms)[0m  BEGIN
+  [1m[36mUser Load (44.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example@railstutorial.org')) LIMIT 1[0m
+  [1m[35mSQL (5.0ms)[0m  describe `users`
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Example User', '2e92e941bccc1734b2bb1f9f785565236cdb9d58a5a539065ffe102e5fbb1342', 'cbc4ba9d8cef4b604fbc63ae96a103f70d9177d14c88ee875ac490ea02b9a7c9', 'example@railstutorial.org')[0m
+  [1m[35mSQL (3.0ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (1.0ms)[0m  UPDATE `users` SET `updated_at` = '2011-06-22 13:31:35', `admin` = 1 WHERE (`users`.`id` = 1)
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-1@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Riley Rau', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-1@railstutorial.org')
+  [1m[36mSQL (3.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-2@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Tatum Bins', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-2@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-3@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Maryam Bechtelar', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-3@railstutorial.org')
+  [1m[36mSQL (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (1.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-4@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Ron Feeney', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-4@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (19.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-5@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Stacy Walsh', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-5@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-6@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Carson Kessler', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-6@railstutorial.org')
+  [1m[36mSQL (3.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (1.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-7@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Barton Ratke', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-7@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-8@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Oma Okuneva V', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-8@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-9@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Name Little', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-9@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-10@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Alisa Maggio', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-10@railstutorial.org')
+  [1m[36mSQL (3.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (1.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-11@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Marcelo Hoeger IV', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-11@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (1.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-12@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Elizabeth Kub', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-12@railstutorial.org')
+  [1m[36mSQL (3.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (1.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-13@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Jena Turner', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-13@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (1.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-14@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Bobbie Wolf', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-14@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-15@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Tara Mosciski', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-15@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-16@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Ismael Harvey', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-16@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-17@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Ms. Benedict D\'Amore', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-17@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-18@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Ronaldo Yost', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-18@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-19@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Pierce Ward', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-19@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-20@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Peggie Hahn', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-20@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-21@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Ms. Elsa Hilpert', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-21@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-22@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Dandre Lueilwitz', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-22@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (1.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-23@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Sincere Gerhold', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-23@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-24@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Bret Schmidt', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-24@railstutorial.org')
+  [1m[36mSQL (23.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-25@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Nora Fisher', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-25@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-26@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Bernhard Luettgen', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-26@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-27@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Nikko Kling', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-27@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-28@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Alexandro Collier', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-28@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-29@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Dr. Alanis Lesch', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-29@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-30@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Daphney Schultz DDS', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-30@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-31@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Leora Wyman', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-31@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-32@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Kaleb Gerhold', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-32@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-33@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Patience Thiel', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-33@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-34@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Juana Schaden', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-34@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-35@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Juliana Blick', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-35@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-36@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Nella Jacobson', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-36@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-37@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Terrence Hudson', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-37@railstutorial.org')
+  [1m[36mSQL (3.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-38@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Karolann Williamson', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-38@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-39@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Lisandro Champlin', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-39@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-40@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Shaniya Kautzer', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-40@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-41@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Donny Bauch', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-41@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-42@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Koby Bode', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-42@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-43@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Petra Macejkovic', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-43@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (1.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-44@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Bertrand Gislason', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-44@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-45@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Dr. Zane Mayert', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-45@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-46@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Lavonne Graham', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-46@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-47@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Mathew Roberts', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-47@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-48@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Lafayette Wunsch', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-48@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-49@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Mellie Ledner', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-49@railstutorial.org')
+  [1m[36mSQL (3.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (3.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-50@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Zackary Runolfsson', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-50@railstutorial.org')
+  [1m[36mSQL (6.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-51@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Isabell Jewess I', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-51@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-52@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Emmitt Grimes', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-52@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-53@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Dora Wiza', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-53@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-54@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Vada Grant Jr.', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-54@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-55@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Ms. Jennifer Cormier', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-55@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-56@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Meda Prohaska', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-56@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-57@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Edgardo Durgan', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-57@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-58@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Jena Terry', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-58@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-59@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Ernestina Fisher', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-59@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-60@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Gabrielle Jerde V', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-60@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-61@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Claude Braun', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-61@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-62@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Ruthie Lang', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-62@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-63@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Floy Rodriguez III', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-63@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-64@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Alycia Stamm', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-64@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-65@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Grayson Deckow', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-65@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-66@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Izabella Reinger', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-66@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-67@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Felix Fisher MD', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-67@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-68@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Stephanie Borer', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-68@railstutorial.org')
+  [1m[36mSQL (3.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-69@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Jadyn Hartmann', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-69@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-70@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Anna Larson V', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-70@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-71@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Mrs. Madilyn Quitzon', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-71@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-72@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (2.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:35', 0, '2011-06-22 13:31:35', 'Virgie O\'Hara', 'a8065e96609706b549fd457da2898bfd7c0878de8f2ed28dcc1d3c107e94f8c1', '2ef8df20d15f15ea8fc048c50c6d91274e30f1ac73a5d4b556fc9090f7ea379b', 'example-72@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-73@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Dasia Blick', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-73@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-74@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Robb Windler', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-74@railstutorial.org')
+  [1m[36mSQL (3.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-75@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Tommie Klocko', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-75@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-76@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Amya Purdy', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-76@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-77@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Miss Jena Reynolds', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-77@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-78@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Cortez Koss', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-78@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-79@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Mrs. Bernard Block', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-79@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-80@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Corbin Weimann', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-80@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-81@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Cortney Corkery', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-81@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-82@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Libby Rogahn', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-82@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-83@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Lyla Gulgowski', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-83@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-84@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Stephanie Braun', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-84@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-85@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Brandon Haag', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-85@railstutorial.org')
+  [1m[36mSQL (3.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-86@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Ms. Jacinto Hirthe', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-86@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-87@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Mr. Mauricio Mohr', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-87@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-88@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Dovie McKenzie', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-88@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-89@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Jettie Bernier', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-89@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-90@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Enid Hodkiewicz Jr.', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-90@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-91@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Miss Judge Emmerich', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-91@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (1.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-92@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Amira Gorczany', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-92@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-93@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Jerrod Watsica', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-93@railstutorial.org')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-94@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Estella Hammes', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-94@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-95@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Jayden Bergstrom', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-95@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-96@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Flossie Carter', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-96@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-97@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Dovie Halvorson', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-97@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-98@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Donato Hettinger', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-98@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (1.0ms)[0m  BEGIN
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('example-99@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO `users` (`updated_at`, `admin`, `created_at`, `name`, `encrypted_password`, `salt`, `email`) VALUES ('2011-06-22 13:31:36', 0, '2011-06-22 13:31:36', 'Brandi Hermiston II', 'f0fb5e2ca4d6f78be1dcc2052d7939abd9d434e6ad891e19781589f4b4fa83eb', '0d67f43a7925b5629799ac68ce60e8c636fb836376a4eddb1182a1414043d6b5', 'example-99@railstutorial.org')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:31:49 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+Redirected to http://localhost:3000/signin
+Completed 302 Found in 30ms
+
+
+Started GET "/signin" for 127.0.0.1 at Wed Jun 22 16:31:49 +0300 2011
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 92) LIMIT 1
+Rendered layouts/_header.html.erb (29.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered sessions/new.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 70ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Wed Jun 22 16:31:56 +0300 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"example@railstutorial.org"}, "authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "utf8"=>"✓"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`email` = 'example@railstutorial.org') LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 28ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:31:56 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+Rendered users/_user.html.erb (32.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 107ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/1" for 127.0.0.1 at Wed Jun 22 16:31:59 +0300 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q9OAO39kmWcx2QO8HMI70pDIVSAnRg3UwCu7y4BnV+A=", "id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Redirected to http://localhost:3000/users
+Completed 302 Found in 39ms
+
+
+Started GET "/users" for 127.0.0.1 at Wed Jun 22 16:31:59 +0300 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` LIMIT 30 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+Rendered users/_user.html.erb (40.0ms)
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered users/index.html.erb within layouts/application (73.0ms)
+Completed 200 OK in 167ms (Views: 92.0ms | ActiveRecord: 0.0ms)
