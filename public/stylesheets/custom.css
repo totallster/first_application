@@ -245,3 +245,10 @@ form.new_micropost textarea {
   height: 4em;
   margin-bottom: 0;
 }
+
+#charsLeft {
+  font-size: 100%;
+  position: absolute;
+  top: 330px;
+  left: 725px;
+}
