@@ -9,6 +9,7 @@ source 'http://rubygems.org'
   group :development do
     gem 'rspec-rails', '2.5.0'
     gem 'faker', '0.3.1'
+    gem 'jquery-rails', '>= 1.0.12'
   end
 
   group :test do

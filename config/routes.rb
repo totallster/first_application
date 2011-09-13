@@ -12,8 +12,6 @@ Twitter::Application.routes.draw do
   match '/help',    :to => 'pages#help'
   root              :to => 'pages#home'
   
-  resources :microposts
-  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

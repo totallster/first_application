@@ -246,9 +246,10 @@ form.new_micropost textarea {
   margin-bottom: 0;
 }
 
+/* Microposts jquery counter */
+
 #charsLeft {
+  font-weight: bold;
   font-size: 100%;
-  position: absolute;
-  top: 330px;
-  left: 725px;
+  padding-left: 310px;
 }
